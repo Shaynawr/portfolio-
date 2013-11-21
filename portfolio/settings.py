@@ -7,9 +7,11 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
-from os.path import join, normpath
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from os.path import dirname, join, normpath
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -17,18 +19,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '4l1l^%ugkngv5k79k=@ud(2w8bh&reut*c!b#gct)*#ebtmqxk'
+SECRET_KEY = '(h18$nz8c8(#===60@d(%3(*p9n6luwc43+$zh!%prcl9aengo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
-
 TEMPLATE_DIRS = (
-    normpath(join(BASE_DIR,'templates'))
+    normpath(join(BASE_DIR, 'templates'))
 )
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -84,3 +86,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    '/var/www/static/',
+)
+
+#STATIC_ROOT = "/var/www/example.com/static"
