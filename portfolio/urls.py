@@ -15,4 +15,6 @@ urlpatterns = patterns('',
     url(r'^blog/', TemplateView.as_view(template_name='blog.html')),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^weblog/', include('zinnia.urls')),
+    url(r'^comments/', include('django.contrib.comments.urls')),
 )
