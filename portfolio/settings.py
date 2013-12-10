@@ -26,6 +26,8 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+SITE_ID = 1
+
 TEMPLATE_DIRS = (
     normpath(join(BASE_DIR, 'templates'))
 )
@@ -35,7 +37,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
   'django.core.context_processors.i18n',
   'django.core.context_processors.request',
   'django.core.context_processors.media',
-  'zinnia.context_processors.version',) # Optional
+  'zinnia.context_processors.version', # Optional
+)
 
 ALLOWED_HOSTS = []
 
@@ -54,6 +57,7 @@ INSTALLED_APPS = (
     'zinnia',
     'django.contrib.sites',
     'django.contrib.comments',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -1,80 +1,110 @@
-{% include 'base.html' %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <div class="container">
 
-    <title>Small Business Template with Logo for Bootstrap 3</title>
+      <div class="row">
+        <div class="box">
+          <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">About <strong>Me</strong></h2>
+            <hr>
+          </div>
+          <div class="col-md-6">
+            <p>This is a great place to introduce your company or project and describe what you do.</p>
+            <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+         </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
 
-      <html>
-<body background="http://cf.sketchfu.com/i/2917368.png">
+      <div class="row">
+        <div class="box">
+          <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">My <strong>Projects</strong></h2>
+            <hr>
+          </div>
+          <div class="col-sm-4 text-center">
+              <img class="img-responsive" src="http://placehold.it/750x450">
+              <h3>John Smith <small>Job Title</small></h3>
+          </div>
+          <div class="col-sm-4 text-center">
+              <img class="img-responsive" src="http://placehold.it/750x450">
+              <h3>John Smith <small>Job Title</small></h3>
+          </div>
+          <div class="col-sm-4 text-center">
+              <img class="img-responsive" src="http://placehold.it/750x450">
+              <h3>John Smith <small>Job Title</small></h3>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
 
+    </div><!-- /.container -->
+
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
 
   </body>
 </html>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrapsettings.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="{% static 'css/small-business.css' %}" rel="stylesheet">
 
-  </head>
 
-    <div class="container">
 
-      <center><div class="row">
-        <div class="col-lg-5">
-          <img class="img-responsive img-rounded"> <img height="300" width="300" src= "https://scontent-a-dfw.xx.fbcdn.net/hphotos-frc1/197897_10150153638933792_3468009_n.jpg"
-            style="border:5px solid red">
+
+
+
+
+
+
+
+
+{#      <center><div class="row">#}
+{#        <div class="col-lg-5">#}
+{#          <img class="img-responsive img-rounded"> <img height="300" width="300" src= "https://scontent-a-dfw.xx.fbcdn.net/hphotos-frc1/197897_10150153638933792_3468009_n.jpg"#}
+{#            style="border:5px solid red">#}
 {#                >src="http://placehold.it/350x250"><!-- take out img-rounded if you don't want the rounded corners on the image -->#}
-        </div>
-        <div class="col-lg-4">
-          <h1><font face="courier"><font color="red">About Me</font></font></h1>
-          <p><h4><font color="black">My name is Shayna Roseborough, I am 21 years old and live in Tooele Utah,
-            I started coding in late 2013 at a 9 week web development course specializing in the python programming
-            language. I have worked on a wide range of projects that you can view in my portfolio.
-            In my free time I enjoy being outdoors and spending time with my family.</font></h4></p>
-            <p><a href ="/contact" class="btn btn-primary btn-lg" role="button">Contact me &raquo;</a></p>
+{#        </div>#}
+{#        <div class="col-lg-4">#}
+{#          <h1><font face="courier"><font color="red">About Me</font></font></h1>#}
+{#          <p><h4><font color="black">My name is Shayna Roseborough, I am 21 years old and live in Tooele Utah,#}
+{#            I started coding in late 2013 at a 9 week web development course specializing in the python programming#}
+{#            language. I have worked on a wide range of projects that you can view in my portfolio.#}
+{#            In my free time I enjoy being outdoors and spending time with my family.</font></h4></p>#}
+{#            <p><a href ="/contact" class="btn btn-primary btn-lg" role="button">Contact me &raquo;</a></p>#}
+{##}
+{#        </div>#}
+{#      </div>#}
+{#        </center>#}
+{##}
+{#      <hr>#}
+{##}
+{##}
+{#      <center><div class="row">#}
+{#        <div class="col-lg-4">#}
+{#          <h1><font face="courier"><font color="red">Past Experience</font></font></h1>#}
+{#          <p><h4></h4><font color="black">I graduated high school in 2010 and went to school for cosmetology. For the past#}
+{#              3 years I have been self employed and managing my own business, at which i have utilized my skills#}
+{#              of communicating with others.</font></h4></p>#}
+{##}
+{#        </div>#}
+{#        <div class="col-lg-4">#}
+{#        </div>#}
+{#        <div class="col-lg-4">#}
+{#          <h1><font face="courier"><font color="red">Goals</font></font></h1>#}
+{#          <p><h4></h4><font color="black">blah blah</font></h4></p>#}
+{##}
+{#        </div>#}
+{#      </div>#}
+{#          </center>#}
 
-        </div>
-      </div>
-        </center>
+{% endblock content %}
 
-      <hr>
-
-
-      <center><div class="row">
-        <div class="col-lg-4">
-          <h1><font face="courier"><font color="red">Past Experience</font></font></h1>
-          <p><h4></h4><font color="black">I graduated high school in 2010 and went to school for cosmetology. For the past
-              3 years I have been self employed and managing my own business, at which i have utilized my skills
-              of communicating with others.</font></h4></p>
-
-        </div>
-        <div class="col-lg-4">
-        </div>
-        <div class="col-lg-4">
-          <h1><font face="courier"><font color="red">Goals</font></font></h1>
-          <p><h4></h4><font color="black">blah blah</font></h4></p>
-
-        </div>
-      </div>
-          </center>
-
-
-    </div><!-- /.container -->
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-</html>
 
