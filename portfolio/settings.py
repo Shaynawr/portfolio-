@@ -109,3 +109,9 @@ STATICFILES_DIRS = (
 )
 
 #STATIC_ROOT = "/var/www/example.com/static"
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'shaynawr@gmail.com'
+EMAIL_HOST_PASSWORD = 'space1234'

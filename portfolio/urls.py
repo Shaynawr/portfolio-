@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='index.html')),
     url(r'^about/', TemplateView.as_view(template_name='about.html')),
     url(r'^contact/', TemplateView.as_view(template_name='contact.html')),
+    url(r'^contact-send/$', 'projects.views.send_contact'),
     url(r'^projects/', TemplateView.as_view(template_name='projects.html')),
     #url(r'^blog/', TemplateView.as_view(template_name='blog.html')),
 
